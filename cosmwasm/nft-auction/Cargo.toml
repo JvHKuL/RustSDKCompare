@@ -1,0 +1,23 @@
+[package]
+name        = "nft-auction"
+version     = "0.1.0"
+edition     = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+backtraces = ["cosmwasm-std/backtraces"]
+library = []
+
+[dependencies]
+cosmwasm-schema = { workspace = true }
+cosmwasm-std    = { workspace = true }
+cw-ownable      = { workspace = true }
+cw-storage-plus = { workspace = true }
+cw-utils        = { workspace = true }
+thiserror       = { workspace = true }
+erc721 = { path = "../erc721" }
+
+[dev-dependencies]
+cw-multi-test   = "^0.20"

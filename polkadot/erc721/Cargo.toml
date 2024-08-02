@@ -1,0 +1,17 @@
+[package]
+name = "erc721"
+edition = "2021"
+publish = false
+
+[dependencies]
+ink = { version = "5.0.0", default-features = false }
+
+[lib]
+path = "lib.rs"
+
+[features]
+default = ["std"]
+std = [
+    "ink/std",
+]
+ink-as-dependency = []

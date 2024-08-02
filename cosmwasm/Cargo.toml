@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "erc721", "nft-auction",
+]
+
+[workspace.dependencies]
+cosmwasm-schema = "^1.2"
+cosmwasm-std    = "^1.2"
+cw-ownable      = "^0.5"
+cw-storage-plus = "^1.1"
+cw-utils        = "^1.0"
+thiserror       = "^1.0"
